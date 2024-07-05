@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''annotate a function .
+'''annotate a function.
 '''
 from typing import Iterable, List, Sequence, Tuple
 
