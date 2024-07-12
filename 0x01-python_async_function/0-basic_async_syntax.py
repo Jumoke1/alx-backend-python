@@ -1,11 +1,13 @@
-#!/usr/bin/env python3
-''' python async'''
-import random
+##!/usr/bin/env python3
+'''python async.
+'''
 import asyncio
+import random
 
 
-async def wait_random(max_delay: int = 10) ->float:
-    '''Generate a random floating-point number between 0 and max_delay (inclusive)'''
-    delay = random.uniform(0, max_delay)
-    await asyncio.sleep(delay)
-    return delay
+async def wait_random(max_delay: int = 10) -> float:
+    '''Waits for a random number of seconds.
+    '''
+    delays = random.random() * max_delay
+    await asyncio.sleep(delays)
+    return delays
