@@ -2,7 +2,7 @@
 '''Python - Async Comprehension'''
 import asyncio
 import random
-from typing import Generaator
+from typing import Generator
 
 
 async def async_generator() -> Generator[float, None, None]:
