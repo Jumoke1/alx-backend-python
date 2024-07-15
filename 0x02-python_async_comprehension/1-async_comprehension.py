@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
-'''Task 1's module.
-'''
+'''Async Comprehensions'''
+import asyncio
 from typing import List
-from importlib import import_module as using
 
 
-async_generator = using('0-async_generator').async_generator
+async_generator = __import__('0-async_generator').async_generator
 
-
-async def async2_comprehension() -> List[float]:
-    '''Creates a list of 10 numbers from a 10-number generator.
-    '''
+async def async_comprehension() -> List[int]:
+    '''A coroutine called async_comprehension that takes no arguments and returns a list of 10 random integers.'''
     return [num async for num in async_generator()]
