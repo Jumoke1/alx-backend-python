@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-'''Async comprehension'''
+'''Async Comprehensions'''
 import asyncio
 from typing import List
 async_generator = __import__('0-async_generator').async_generator
 
 
 async def async_comprehension() -> List[float]:
-    ''' a corountine async_comprehension that takes no arguments'''
+    '''a coroutine called async_comprehension that takes no arguments.'''
     return [num async for num in async_generator()]
